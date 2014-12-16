@@ -25,8 +25,12 @@ Documentation for the entire framework can be found on the [Laravel website](htt
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 ### How this was made
+****
+1 Install composer in server.
 
-:1 Install composer in server.
-:2 lnstall laravel with  global 
-'''bash composer require "laravel/installer=~1.1" ''''
-:3 With the schema set up, and the enviroment variables, do set up app/config/database.
+2 lnstall laravel with  global 
+```bash composer require "laravel/installer=~1.1" ```
+
+3 With the schema set up, and the enviroment variables, do set up app/config/database.
+
+****
