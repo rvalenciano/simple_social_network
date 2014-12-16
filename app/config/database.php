@@ -54,20 +54,21 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+            'host'  => getenv('APP_HOST') ?: 'localhost',
+            'database'  => getenv('APP_DB'),
+            'username'  => getenv('APP_USER'),
+            'password'  => getenv('APP_PASS'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+            'port'      =>   getenv('APP_PORT') ? getenv('APP_PORT') : '3306',
 		),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'forge',
-			'username' => 'forge',
+			'database' => 'ff_dev',
+			'username' => 'postgres',
 			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',

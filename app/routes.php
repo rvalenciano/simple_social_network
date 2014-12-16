@@ -11,7 +11,19 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', [
+    'uses' => 'SocialNetworkUserController@dummy_index',
+    'as' => 'home',
+]);
+
+// Route group for API versioning
+Route::group(array('prefix' => 'api/v1'), function()
 {
-	return View::make('hello');
+	Route::resource('users', 'SocialNetworkUserController');
+    Route::resource('friend', 'FriendController');
+    Route::post('users/friends/add/{uid1}/{uid2}', [
+    'uses' => 'FriendController@add',
+    ]);
+
+
 });
