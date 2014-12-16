@@ -34,3 +34,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 3 With the schema set up, and the enviroment variables, do set up app/config/database.
 
 ****
+
+### What works and what not?
+
+First Endpoint and third.
+Second was implemented in code but not working.
+Others are not implemented.
