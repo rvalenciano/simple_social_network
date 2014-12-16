@@ -40,3 +40,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 First Endpoint and third.
 Second was implemented in code but not working.
 Others are not implemented.
+
+### Examples
+
+1. First Endpoint:
+```bash 
+http://localhost:8000/api/v1/users/create?user={%22First%20Name%22:%22Randy%22,%22Last%20Name%22:%22Valenciano%22,%22Age%22:%2026,%22Date%20of%20Birth%22:%221991-16-07%22}
+```
+2. Third
+ ```bash 
+http://localhost:8000/api/v1/users/52
+```
+
